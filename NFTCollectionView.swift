@@ -33,7 +33,7 @@ struct NFTCollectionView: View {
                 }
             }
             .navigationTitle("NFTs")
-            .toolbarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.large)
         }
         .onAppear {
             // Populate with mock data for now; replace with real fetch later.

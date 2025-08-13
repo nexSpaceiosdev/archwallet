@@ -21,7 +21,7 @@ struct ProfileView: View {
                 .padding()
             }
             .navigationTitle("Profile")
-            .toolbarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }
