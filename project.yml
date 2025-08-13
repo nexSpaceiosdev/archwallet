@@ -1,0 +1,8 @@
+name: ArchWallet
+targets:
+  ArchWallet:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - "."

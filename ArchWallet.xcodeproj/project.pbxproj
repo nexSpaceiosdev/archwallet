@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001070A9F97F1AC1BF29B52D /* pre-receive.sample in Resources */ = {isa = PBXBuildFile; fileRef = 2019CFB8CA3ED555F9E621DB /* pre-receive.sample */; };
+		02E18342DB74B15A130476B8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C355B56C3E88C5CF3D59C4 /* Theme.swift */; };
+		09F1B71D1F30AB34C36F2C2A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D2427133CB7D2EA1DEBEA /* MainTabView.swift */; };
+		15526B41770CA1DD13828129 /* pre-push.sample in Resources */ = {isa = PBXBuildFile; fileRef = B86012609B058C2804AC1A1C /* pre-push.sample */; };
+		1BCE6858CC1BCE2A8D5DE14C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D7BB2C42A05A483EB6F591 /* Models.swift */; };
+		2DF57C41FAEF1C51FBFA5371 /* post-update.sample in Resources */ = {isa = PBXBuildFile; fileRef = B616BB09438CF646DDB8AB14 /* post-update.sample */; };
+		418414A96E24BC70187C609F /* cursor_metadata.pb in Resources */ = {isa = PBXBuildFile; fileRef = D45B17EA13684376E0C63B6D /* cursor_metadata.pb */; };
+		546299DC2C30335A5D1E6D4C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106E7F80BAE98D7EF438597 /* DashboardView.swift */; };
+		546E7A1C6D18E14F8BDF52EE /* pre-applypatch.sample in Resources */ = {isa = PBXBuildFile; fileRef = 9DE80299A2D4B2236F452817 /* pre-applypatch.sample */; };
+		6AE033487D4717A19A81F34B /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack in Resources */ = {isa = PBXBuildFile; fileRef = 839ADF2EDF686CEEBCD36F0A /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack */; };
+		6CAED490844DD97C4A6317DA /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx in Resources */ = {isa = PBXBuildFile; fileRef = FFBAF58A9E2CFABD7FD3AEE0 /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx */; };
+		7DD10615871D57F86F6F2442 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 88E3B79D3F57FDEBFA1B2237 /* project.yml */; };
+		7FB509A892755B6925E54C5F /* pre-rebase.sample in Resources */ = {isa = PBXBuildFile; fileRef = 0400F777868698A305AA32C6 /* pre-rebase.sample */; };
+		81FA8F68CBD58A668DA4A95F /* prepare-commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 8C8728401AD9903DD7A811D0 /* prepare-commit-msg.sample */; };
+		8B3ABCD98063EA2AAD89FCBA /* update.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DBF2A60CE15DDE0050CB8 /* update.sample */; };
+		90FC77F53BC0113FED9A3B34 /* applypatch-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = DCF244ADBB6143CCC1A0ED7D /* applypatch-msg.sample */; };
+		A70605DDD5866AC12834507B /* NFTCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0979C2C35A2E6B108E4B5146 /* NFTCollectionView.swift */; };
+		AA6367AE014F8AA86AEA9C0C /* commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 85A887EB48409B69D1856DFB /* commit-msg.sample */; };
+		B523DE9718A4761D98C52B83 /* pre-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = A8FD1AD296CCE264947CCB0C /* pre-commit.sample */; };
+		BB7A2519EAF4BC5AF8F279B1 /* fsmonitor-watchman.sample in Resources */ = {isa = PBXBuildFile; fileRef = 6404A5C0BF8DF13AE462FBC8 /* fsmonitor-watchman.sample */; };
+		C2929D0E88E780221532D3E1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D888F60403A259EE7C1C9BC /* App.swift */; };
+		C7AE88B5382DBF94FD2A8BF1 /* pre-merge-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = 897757E7ED486C2F916CEC18 /* pre-merge-commit.sample */; };
+		E96A674F0F7B88EB69A8A4E0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FF4B47228F6A6FC58F6F7 /* ProfileView.swift */; };
+		F8ACBBFFDF01562F3610440B /* push-to-checkout.sample in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B4474DA2E3E569E5DD5E9 /* push-to-checkout.sample */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0400F777868698A305AA32C6 /* pre-rebase.sample */ = {isa = PBXFileReference; path = "pre-rebase.sample"; sourceTree = "<group>"; };
+		094D2427133CB7D2EA1DEBEA /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		0979C2C35A2E6B108E4B5146 /* NFTCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionView.swift; sourceTree = "<group>"; };
+		0F7DDC9B57E21C7F4E0002A5 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		0F8EB3E67799AE86D573DB96 /* config */ = {isa = PBXFileReference; path = config; sourceTree = "<group>"; };
+		2019CFB8CA3ED555F9E621DB /* pre-receive.sample */ = {isa = PBXFileReference; path = "pre-receive.sample"; sourceTree = "<group>"; };
+		2C1B4474DA2E3E569E5DD5E9 /* push-to-checkout.sample */ = {isa = PBXFileReference; path = "push-to-checkout.sample"; sourceTree = "<group>"; };
+		396FF4B47228F6A6FC58F6F7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4A5DBF2A60CE15DDE0050CB8 /* update.sample */ = {isa = PBXFileReference; path = update.sample; sourceTree = "<group>"; };
+		501D8ABF0CF65B7200E4D95C /* exclude */ = {isa = PBXFileReference; path = exclude; sourceTree = "<group>"; };
+		55D7BB2C42A05A483EB6F591 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		6404A5C0BF8DF13AE462FBC8 /* fsmonitor-watchman.sample */ = {isa = PBXFileReference; path = "fsmonitor-watchman.sample"; sourceTree = "<group>"; };
+		6B33B5CD78D09F8E50FBC80A /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		7725E6122212D33DCB88B571 /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		839ADF2EDF686CEEBCD36F0A /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack */ = {isa = PBXFileReference; path = "pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack"; sourceTree = "<group>"; };
+		85A887EB48409B69D1856DFB /* commit-msg.sample */ = {isa = PBXFileReference; path = "commit-msg.sample"; sourceTree = "<group>"; };
+		88E3B79D3F57FDEBFA1B2237 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		897757E7ED486C2F916CEC18 /* pre-merge-commit.sample */ = {isa = PBXFileReference; path = "pre-merge-commit.sample"; sourceTree = "<group>"; };
+		8C8728401AD9903DD7A811D0 /* prepare-commit-msg.sample */ = {isa = PBXFileReference; path = "prepare-commit-msg.sample"; sourceTree = "<group>"; };
+		8D888F60403A259EE7C1C9BC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		9106E7F80BAE98D7EF438597 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		99FF9F878AF5C4A4D14E22F6 /* description */ = {isa = PBXFileReference; path = description; sourceTree = "<group>"; };
+		9DE80299A2D4B2236F452817 /* pre-applypatch.sample */ = {isa = PBXFileReference; path = "pre-applypatch.sample"; sourceTree = "<group>"; };
+		A8FD1AD296CCE264947CCB0C /* pre-commit.sample */ = {isa = PBXFileReference; path = "pre-commit.sample"; sourceTree = "<group>"; };
+		ADB04C726DD7306F1E90A55E /* index */ = {isa = PBXFileReference; path = index; sourceTree = "<group>"; };
+		B616BB09438CF646DDB8AB14 /* post-update.sample */ = {isa = PBXFileReference; path = "post-update.sample"; sourceTree = "<group>"; };
+		B66CB969DD008A09254DA478 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		B85A6EF0A91FB149CBD78452 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		B86012609B058C2804AC1A1C /* pre-push.sample */ = {isa = PBXFileReference; path = "pre-push.sample"; sourceTree = "<group>"; };
+		CDDDA9C7456229605C5E8B63 /* packed-refs */ = {isa = PBXFileReference; path = "packed-refs"; sourceTree = "<group>"; };
+		D45B17EA13684376E0C63B6D /* cursor_metadata.pb */ = {isa = PBXFileReference; path = cursor_metadata.pb; sourceTree = "<group>"; };
+		DCF244ADBB6143CCC1A0ED7D /* applypatch-msg.sample */ = {isa = PBXFileReference; path = "applypatch-msg.sample"; sourceTree = "<group>"; };
+		E4B130138527B8A1657E7AAA /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		F6C355B56C3E88C5CF3D59C4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F715DA1D92507CFDE4D05D07 /* ArchWallet.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ArchWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBAF58A9E2CFABD7FD3AEE0 /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx */ = {isa = PBXFileReference; path = "pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		15AA74FDB4E04609C9B3F3D8 /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				6B33B5CD78D09F8E50FBC80A /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		3887AC8FCAA7A9EB1B598B75 /* origin */ = {
+			isa = PBXGroup;
+			children = (
+				B85A6EF0A91FB149CBD78452 /* HEAD */,
+			);
+			path = origin;
+			sourceTree = "<group>";
+		};
+		3D8806607C6B0ADBCDB8DA36 /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+				813820F2C2E50A0AE1D182D2 /* origin */,
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+		3F5EBE233F6002E506FF2C0A /* archwallet */ = {
+			isa = PBXGroup;
+			children = (
+				8D888F60403A259EE7C1C9BC /* App.swift */,
+				9106E7F80BAE98D7EF438597 /* DashboardView.swift */,
+				094D2427133CB7D2EA1DEBEA /* MainTabView.swift */,
+				0979C2C35A2E6B108E4B5146 /* NFTCollectionView.swift */,
+				396FF4B47228F6A6FC58F6F7 /* ProfileView.swift */,
+				88E3B79D3F57FDEBFA1B2237 /* project.yml */,
+				A6CF8624F5E8790B74956D53 /* .git */,
+				836741CE43D1D014444DCE5A /* Models */,
+				9B23F38ABC53FBFBC9C726AE /* Theme */,
+			);
+			name = archwallet;
+			path = .;
+			sourceTree = "<group>";
+		};
+		463FC25F813D902C9EDED8B9 /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				7725E6122212D33DCB88B571 /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		570547B4805878E09F9A8634 /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				15AA74FDB4E04609C9B3F3D8 /* heads */,
+				881B2AFF51B18278CECB3845 /* remotes */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		5EAD8F7A374657C753F5E236 /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				B66CB969DD008A09254DA478 /* HEAD */,
+				570547B4805878E09F9A8634 /* refs */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		645633FD54DD23061795DEF6 /* pack */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAF58A9E2CFABD7FD3AEE0 /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx */,
+				839ADF2EDF686CEEBCD36F0A /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack */,
+			);
+			path = pack;
+			sourceTree = "<group>";
+		};
+		66715CF1642C58A9B7991814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F715DA1D92507CFDE4D05D07 /* ArchWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AF29202F97DA7292FACA965 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				501D8ABF0CF65B7200E4D95C /* exclude */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		813820F2C2E50A0AE1D182D2 /* origin */ = {
+			isa = PBXGroup;
+			children = (
+				E4B130138527B8A1657E7AAA /* HEAD */,
+			);
+			path = origin;
+			sourceTree = "<group>";
+		};
+		836741CE43D1D014444DCE5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55D7BB2C42A05A483EB6F591 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		881B2AFF51B18278CECB3845 /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+				3887AC8FCAA7A9EB1B598B75 /* origin */,
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+		9B23F38ABC53FBFBC9C726AE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F6C355B56C3E88C5CF3D59C4 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A6CF8624F5E8790B74956D53 /* .git */ = {
+			isa = PBXGroup;
+			children = (
+				0F8EB3E67799AE86D573DB96 /* config */,
+				D45B17EA13684376E0C63B6D /* cursor_metadata.pb */,
+				99FF9F878AF5C4A4D14E22F6 /* description */,
+				0F7DDC9B57E21C7F4E0002A5 /* HEAD */,
+				ADB04C726DD7306F1E90A55E /* index */,
+				CDDDA9C7456229605C5E8B63 /* packed-refs */,
+				B30F870E6B4FF2E2D0D2B26B /* hooks */,
+				7AF29202F97DA7292FACA965 /* info */,
+				5EAD8F7A374657C753F5E236 /* logs */,
+				C9A3052AF6C1D1224AF74135 /* objects */,
+				B3A5C149114C1D67A0D4C8D8 /* refs */,
+			);
+			path = .git;
+			sourceTree = "<group>";
+		};
+		B30F870E6B4FF2E2D0D2B26B /* hooks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF244ADBB6143CCC1A0ED7D /* applypatch-msg.sample */,
+				85A887EB48409B69D1856DFB /* commit-msg.sample */,
+				6404A5C0BF8DF13AE462FBC8 /* fsmonitor-watchman.sample */,
+				B616BB09438CF646DDB8AB14 /* post-update.sample */,
+				9DE80299A2D4B2236F452817 /* pre-applypatch.sample */,
+				A8FD1AD296CCE264947CCB0C /* pre-commit.sample */,
+				897757E7ED486C2F916CEC18 /* pre-merge-commit.sample */,
+				B86012609B058C2804AC1A1C /* pre-push.sample */,
+				0400F777868698A305AA32C6 /* pre-rebase.sample */,
+				2019CFB8CA3ED555F9E621DB /* pre-receive.sample */,
+				8C8728401AD9903DD7A811D0 /* prepare-commit-msg.sample */,
+				2C1B4474DA2E3E569E5DD5E9 /* push-to-checkout.sample */,
+				4A5DBF2A60CE15DDE0050CB8 /* update.sample */,
+			);
+			path = hooks;
+			sourceTree = "<group>";
+		};
+		B3A5C149114C1D67A0D4C8D8 /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				463FC25F813D902C9EDED8B9 /* heads */,
+				3D8806607C6B0ADBCDB8DA36 /* remotes */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		C9A3052AF6C1D1224AF74135 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				645633FD54DD23061795DEF6 /* pack */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		D1F55F4549FBF53E8164C388 = {
+			isa = PBXGroup;
+			children = (
+				A6CF8624F5E8790B74956D53 /* .git */,
+				3F5EBE233F6002E506FF2C0A /* archwallet */,
+				836741CE43D1D014444DCE5A /* Models */,
+				9B23F38ABC53FBFBC9C726AE /* Theme */,
+				66715CF1642C58A9B7991814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58C45814753CFD3A46065B25 /* ArchWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A7599289D4CB3F81AC59B1 /* Build configuration list for PBXNativeTarget "ArchWallet" */;
+			buildPhases = (
+				B9562E1E0309E776AA39A033 /* Sources */,
+				792EA62545FAF400DD930958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchWallet;
+			packageProductDependencies = (
+			);
+			productName = ArchWallet;
+			productReference = F715DA1D92507CFDE4D05D07 /* ArchWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BEDFF8FFCA5E0E3000C4391 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 0361A3C16135A4429B65715D /* Build configuration list for PBXProject "ArchWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D1F55F4549FBF53E8164C388;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58C45814753CFD3A46065B25 /* ArchWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792EA62545FAF400DD930958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FC77F53BC0113FED9A3B34 /* applypatch-msg.sample in Resources */,
+				AA6367AE014F8AA86AEA9C0C /* commit-msg.sample in Resources */,
+				418414A96E24BC70187C609F /* cursor_metadata.pb in Resources */,
+				BB7A2519EAF4BC5AF8F279B1 /* fsmonitor-watchman.sample in Resources */,
+				6CAED490844DD97C4A6317DA /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.idx in Resources */,
+				6AE033487D4717A19A81F34B /* pack-c2125b7d5721b86026aac9404e3df120e03b3517.pack in Resources */,
+				2DF57C41FAEF1C51FBFA5371 /* post-update.sample in Resources */,
+				546E7A1C6D18E14F8BDF52EE /* pre-applypatch.sample in Resources */,
+				B523DE9718A4761D98C52B83 /* pre-commit.sample in Resources */,
+				C7AE88B5382DBF94FD2A8BF1 /* pre-merge-commit.sample in Resources */,
+				15526B41770CA1DD13828129 /* pre-push.sample in Resources */,
+				7FB509A892755B6925E54C5F /* pre-rebase.sample in Resources */,
+				001070A9F97F1AC1BF29B52D /* pre-receive.sample in Resources */,
+				81FA8F68CBD58A668DA4A95F /* prepare-commit-msg.sample in Resources */,
+				7DD10615871D57F86F6F2442 /* project.yml in Resources */,
+				F8ACBBFFDF01562F3610440B /* push-to-checkout.sample in Resources */,
+				8B3ABCD98063EA2AAD89FCBA /* update.sample in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9562E1E0309E776AA39A033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2929D0E88E780221532D3E1 /* App.swift in Sources */,
+				546299DC2C30335A5D1E6D4C /* DashboardView.swift in Sources */,
+				09F1B71D1F30AB34C36F2C2A /* MainTabView.swift in Sources */,
+				1BCE6858CC1BCE2A8D5DE14C /* Models.swift in Sources */,
+				A70605DDD5866AC12834507B /* NFTCollectionView.swift in Sources */,
+				E96A674F0F7B88EB69A8A4E0 /* ProfileView.swift in Sources */,
+				02E18342DB74B15A130476B8 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F058D9164B6D426CFF2FFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27D3CE8625F5D40F2ED47134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B109769A953894982CF5DC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDA854C55F609E14D689D1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0361A3C16135A4429B65715D /* Build configuration list for PBXProject "ArchWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA854C55F609E14D689D1DC /* Debug */,
+				27D3CE8625F5D40F2ED47134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A9A7599289D4CB3F81AC59B1 /* Build configuration list for PBXNativeTarget "ArchWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F058D9164B6D426CFF2FFF8 /* Debug */,
+				B109769A953894982CF5DC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BEDFF8FFCA5E0E3000C4391 /* Project object */;
+}

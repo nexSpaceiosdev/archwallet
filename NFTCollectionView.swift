@@ -1,28 +1,43 @@
 import SwiftUI
 
 /// NFTCollectionView
-/// A placeholder view representing the user's NFT collection.
-/// Displays a large title until real gallery components are integrated.
+/// Displays the user's NFT collection in a responsive two-column grid.
+///
+/// Implementation details:
+/// - Uses `NFTViewModel` as a `@StateObject` to own the NFT data lifecycle
+/// - `ScrollView` + `LazyVGrid` for efficient, memory-friendly grid rendering
+/// - `NFTCardView` renders individual items with async image loading and theming
 struct NFTCollectionView: View {
+    /// View model owning the NFT list. Created once per view lifecycle.
+    @StateObject private var viewModel = NFTViewModel()
+
+    /// Two-column adaptive grid suitable for phones in portrait.
+    private let gridColumns: [GridItem] = [
+        GridItem(.flexible(), spacing: 12, alignment: .top),
+        GridItem(.flexible(), spacing: 12, alignment: .top)
+    ]
+
     var body: some View {
         NavigationStack {
             ZStack {
                 Theme.background.ignoresSafeArea()
 
-                VStack(spacing: 12) {
-                    Text("NFTs")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Theme.primaryText)
-
-                    Text("Placeholder screen")
-                        .font(.subheadline)
-                        .foregroundColor(Theme.primaryText.opacity(0.6))
+                ScrollView {
+                    LazyVGrid(columns: gridColumns, spacing: 12) {
+                        ForEach(viewModel.nfts) { nft in
+                            NFTCardView(nft: nft)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
                 }
-                .padding()
             }
             .navigationTitle("NFTs")
             .toolbarTitleDisplayMode(.large)
+        }
+        .onAppear {
+            // Populate with mock data for now; replace with real fetch later.
+            viewModel.fetchNFTs()
         }
     }
 }
