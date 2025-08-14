@@ -10,7 +10,7 @@ struct AssetRowView: View {
             // Placeholder logo using SF Symbol; replace with brand/logo asset when available.
             ZStack {
                 Circle()
-                    .fill(Theme.background.opacity(0.9))
+                    .fill(Theme.background)
                     .frame(width: 40, height: 40)
                 Image(systemName: asset.logoName.isEmpty ? "bitcoinsign.circle" : asset.logoName)
                     .foregroundColor(Theme.accent)
@@ -30,7 +30,12 @@ struct AssetRowView: View {
                 .foregroundColor(Theme.primaryText)
                 .font(.subheadline)
         }
-        .padding(.vertical, 8)
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .fill(Color.white)
+        )
+        .shadow(color: Color.black.opacity(0.04), radius: 8, x: 0, y: 4)
     }
 
     private func formattedBalance(_ amount: Double, ticker: String) -> String {

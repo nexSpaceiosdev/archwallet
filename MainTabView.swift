@@ -12,6 +12,7 @@ struct MainTabView: View {
     // MARK: - Body
 
     var body: some View {
+        // DIRECT APPROACH: Let individual views handle their own edge-to-edge backgrounds
         TabView {
             // Dashboard Tab
             DashboardView()
@@ -34,8 +35,6 @@ struct MainTabView: View {
                     Text("Profile")
                 }
         }
-        // Set a unified background that respects safe areas and tab bar translucency.
-        .background(Theme.background.ignoresSafeArea())
     }
 }
 
@@ -43,7 +42,7 @@ struct MainTabView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
 #endif

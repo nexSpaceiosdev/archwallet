@@ -10,5 +10,9 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.archwallet.app
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 1.0
+        # CRITICAL: These settings are required for proper safe area handling
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
     sources:
       - path: .

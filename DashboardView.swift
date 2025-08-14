@@ -8,60 +8,66 @@ struct DashboardView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                Theme.background.ignoresSafeArea()
-
-                VStack(alignment: .leading, spacing: 16) {
-                    // Total Balance
-                    VStack(alignment: .leading, spacing: 4) {
+            // EDGE-TO-EDGE FIX: Apply background directly to the view content
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    // Balance Card
+                    VStack(alignment: .leading, spacing: 8) {
                         Text("Total Balance")
-                            .foregroundColor(Theme.primaryText.opacity(0.6))
+                            .foregroundColor(.white.opacity(0.9))
                             .font(.subheadline)
                         Text(formattedCurrency(viewModel.totalBalance))
-                            .foregroundColor(Theme.primaryText)
-                            .font(.system(size: 36, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .font(.system(size: 34, weight: .bold))
                     }
+                    .padding(16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20, style: .continuous)
+                            .fill(Theme.Brand.deepPurple)
+                    )
+                    .shadow(color: Color.black.opacity(0.08), radius: 12, x: 0, y: 6)
 
                     // Quick Actions
                     HStack(spacing: 12) {
                         Button(action: { isPresentingBuySheet = true }) {
-                            Text("Buy")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Theme.accent)
-                                .cornerRadius(14)
+                            HStack(spacing: 8) {
+                                Image(systemName: "cart")
+                                Text("Buy")
+                            }
+                            .font(.headline)
+                            .foregroundColor(Theme.textPrimary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Theme.Brand.warmGold)
+                            .cornerRadius(16)
+                            .shadow(color: Color.black.opacity(0.06), radius: 8, x: 0, y: 4)
                         }
 
                         Button(action: { /* TODO: implement send flow */ }) {
-                            Text("Send")
-                                .font(.headline)
-                                .foregroundColor(Theme.primaryText)
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(Theme.background.opacity(0.85))
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .stroke(Color.white.opacity(0.08), lineWidth: 1)
-                                )
+                            HStack(spacing: 8) {
+                                Image(systemName: "paperplane.fill")
+                                Text("Send")
+                            }
+                            .font(.headline)
+                            .foregroundColor(Theme.textPrimary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Theme.Brand.softPink)
+                            .cornerRadius(16)
+                            .shadow(color: Color.black.opacity(0.06), radius: 8, x: 0, y: 4)
                         }
                     }
 
-                    // Assets List
-                    List {
+                    // Assets as individual cards
+                    LazyVStack(spacing: 12) {
                         ForEach(viewModel.assets, id: \.ticker) { asset in
                             AssetRowView(asset: asset)
-                                .listRowBackground(Theme.background)
                         }
                     }
-                    .listStyle(.plain)
                 }
-                .padding(.horizontal, 16)
-                .padding(.top, 16)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .navigationTitle("Dashboard")
             .navigationBarTitleDisplayMode(.large)
@@ -84,7 +90,7 @@ struct DashboardView: View {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
 #endif

@@ -13,24 +13,24 @@ struct NFTCollectionView: View {
 
     /// Two-column adaptive grid suitable for phones in portrait.
     private let gridColumns: [GridItem] = [
-        GridItem(.flexible(), spacing: 12, alignment: .top),
-        GridItem(.flexible(), spacing: 12, alignment: .top)
+        GridItem(.flexible(), spacing: 16, alignment: .top),
+        GridItem(.flexible(), spacing: 16, alignment: .top)
     ]
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                Theme.background.ignoresSafeArea()
-
-                ScrollView {
-                    LazyVGrid(columns: gridColumns, spacing: 12) {
-                        ForEach(viewModel.nfts) { nft in
-                            NFTCardView(nft: nft)
-                        }
+            // LAYOUT FIX: Remove ZStack wrapper and redundant background
+            // Problem: Same as DashboardView - ZStack was constraining the NavigationStack content
+            // and preventing the TabView background from showing through properly.
+            ScrollView {
+                LazyVGrid(columns: gridColumns, spacing: 16) {
+                    ForEach(viewModel.nfts) { nft in
+                        NFTCardView(nft: nft)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
                 }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity, alignment: .topLeading)
             }
             .navigationTitle("NFTs")
             .navigationBarTitleDisplayMode(.large)
@@ -46,7 +46,7 @@ struct NFTCollectionView: View {
 struct NFTCollectionView_Previews: PreviewProvider {
     static var previews: some View {
         NFTCollectionView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
 #endif
